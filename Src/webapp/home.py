@@ -68,7 +68,7 @@ def inicio():
                 titles=[f"Image #{str(i)}" for i in range(5)],
                 div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
                 img_style={"margin": "5px", "height": "200px"})
-            st.write(f'### **{reducida['Titulo'].values[0]}**')
+            st.write(f'### **{reducida["Titulo"].values[0]}**')
             st.write(round(np.mean(reducida[['Limpieza', 'Veracidad', 'Llegada', 'Comunicacion', 'Ubicacion', 'Calidad']].values[0]),1) if round(np.mean(reducida[['Limpieza', 'Veracidad', 'Llegada', 'Comunicacion', 'Ubicacion', 'Calidad']].values[0]),1)!=np.nan else 'Nuevo!','⭐️')
             st.write(reducida['Localizacion'].values[0],'📍')
             st.link_button("Ver más", reducida['URL'].values[0])
@@ -83,7 +83,7 @@ def inicio():
                 titles=[f"Image #{str(i)}" for i in range(5)],
                 div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
                 img_style={"margin": "5px", "height": "200px"})
-            st.write(f'### **{reducida['Titulo'].values[1]}**')
+            st.write(f'### **{reducida["Titulo"].values[1]}**')
             st.write(round(np.mean(reducida[['Limpieza', 'Veracidad', 'Llegada', 'Comunicacion', 'Ubicacion', 'Calidad']].values[1]),1) if round(np.mean(reducida[['Limpieza', 'Veracidad', 'Llegada', 'Comunicacion', 'Ubicacion', 'Calidad']].values[1]),1)!=np.nan else 'Nuevo!','⭐️')
             st.write(reducida['Localizacion'].values[1],'📍')
             st.link_button("Ver más", reducida['URL'].values[1])
